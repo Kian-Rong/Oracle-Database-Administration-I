@@ -88,20 +88,24 @@
 <div id="result4" class="result"></div>
 </div>
 <div class="quiz-card">
-<h2>Question 5:</h2>
-<p>A database is configured to use automatic undo management with temporary undo enabled.</p>
-<p>An UPDATE is executed on a temporary table.</p>
-<p>Where is the UNDO stored?</p>
-<p>in the PGA</p>
-<form onsubmit="event.preventDefault(); checkAnswer5();">
-<label><input type="radio" name="q5" value="A"> A. in the undo tablespace</label><br>
-<label><input type="radio" name="q5" value="B"> B. in the SYSAUX tablespace</label><br>
-<label><input type="radio" name="q5" value="C"> C. in the SGA</label><br>
-<label><input type="radio" name="q5" value="D"> D.</label><br>
-<label><input type="radio" name="q5" value="E"> E. in the temporary tablespace</label><br>
-<button type="submit">Submit</button>
-</form>
-<div id="result5" class="result"></div>
+
+<div class="quiz-card">
+  <h2>Question 5:</h2>
+  <p>A database is configured to use automatic undo management with temporary undo enabled.</p>
+  <p>An UPDATE is executed on a temporary table.</p>
+  <p><strong>Where is the UNDO stored?</strong></p>
+
+  <form onsubmit="event.preventDefault(); checkAnswer5();">
+    <label><input type="radio" name="q5" value="A"> A: in the PGA</label><br>
+    <label><input type="radio" name="q5" value="B"> B: in the undo tablespace</label><br>
+    <label><input type="radio" name="q5" value="C"> C: in the SYSAUX tablespace</label><br>
+    <label><input type="radio" name="q5" value="D"> D: in the SGA</label><br>
+    <label><input type="radio" name="q5" value="E"> E: in the temporary tablespace</label><br>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="result5" class="result"></div>
+</div>
+
 </div>
 <div class="quiz-card">
 <h2>Question 6:</h2>
@@ -139,19 +143,23 @@
 <div id="result7" class="result"></div>
 </div>
 <div class="quiz-card">
-<h2>Question 8:</h2>
-<p>Which three statements are true concerning logical and physical database structures? (Choose three.)</p>
-<p><strong>G.</strong> Segments can span multiple tablespsaces</p>
-<form onsubmit="event.preventDefault(); checkAnswer8();">
-<label><input type="checkbox" name="q8" value="A"> A. All tablespaces may have one or more data files</label><br>
-<label><input type="checkbox" name="q8" value="B"> B. The extents of a segment must always reside in the same datafile</label><br>
-<label><input type="checkbox" name="q8" value="C"> C. A smallfile tablespace might be bigger than a bigfile tablespace</label><br>
-<label><input type="checkbox" name="q8" value="D"> D. A segment can span multiple data files in some tablespaces</label><br>
-<label><input type="checkbox" name="q8" value="E"> E. A segment’s blocks can be of different sizes</label><br>
-<label><input type="checkbox" name="q8" value="F"> F. A segment might have only one extent</label><br>
-<button type="submit">Submit</button>
-</form>
-<div id="result8" class="result"></div>
+
+<div class="quiz-card">
+  <h2>Question 8:</h2>
+  <p><strong>Which three statements are true concerning logical and physical database structures? (Choose three.)</strong></p>
+  <form onsubmit="event.preventDefault(); checkAnswer8();">
+    <label><input type="checkbox" name="q8" value="A"> A. All tablespaces may have one or more data files</label><br>
+    <label><input type="checkbox" name="q8" value="B"> B. The extents of a segment must always reside in the same datafile</label><br>
+    <label><input type="checkbox" name="q8" value="C"> C. A smallfile tablespace might be bigger than a bigfile tablespace</label><br>
+    <label><input type="checkbox" name="q8" value="D"> D. A segment can span multiple data files in some tablespaces</label><br>
+    <label><input type="checkbox" name="q8" value="E"> E. A segment’s blocks can be of different sizes</label><br>
+    <label><input type="checkbox" name="q8" value="F"> F. A segment might have only one extent</label><br>
+    <label><input type="checkbox" name="q8" value="G"> G. Segments can span multiple tablespsaces</label><br>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="result8" class="result"></div>
+</div>
+
 </div>
 <div class="quiz-card">
 <h2>Question 9:</h2>
@@ -224,7 +232,7 @@
 <p>WHERE &amp;&amp;condition</p>
 <form onsubmit="event.preventDefault(); checkAnswer13();">
 <label><input type="radio" name="q13" value="A"> A. SELECT &&col1, &&col2</label><br>
-<label><input type="radio" name="q13" value="B"> B. SELECT &col1, &col2</label><br>
+<label><input type="radio" name="q13" value="B"> B. SELECT &col1, &col2 FROM && table WHERE &condition;</label><br>
 <label><input type="radio" name="q13" value="C"> C. SELECT &col1, &col2</label><br>
 <label><input type="radio" name="q13" value="D"> D. SELECT ‘&&col1’, ‘&&col2’</label><br>
 <label><input type="radio" name="q13" value="E"> E. SELECT &&col1, &&col2</label><br>
@@ -2269,7 +2277,7 @@
 <p>The variables used in your query are never undefined in your session. Which query can be used?</p>
 <form onsubmit="event.preventDefault(); checkAnswer150();">
 <label><input type="radio" name="q150" value="A"> A. SELECT &&col1, &&col2FROM &tableWHERE &&condition = &&cond</label><br>
-<label><input type="radio" name="q150" value="B"> B. SELECT &col1, &col2FROM &&tableWHERE &condition</label><br>
+<label><input type="radio" name="q150" value="B"> B. SELECT &col1, &col2 FROM && table WHERE &condition;FROM &&tableWHERE &condition</label><br>
 <label><input type="radio" name="q150" value="C"> C. SELECT &col1, &col2FROM “&table”WHERE &condition</label><br>
 <label><input type="radio" name="q150" value="D"> D. SELECT ‘&&col1’, ‘&&col2’FROM &tableWHERE ‘&&condition’ = ‘&cond’;</label><br>
 <label><input type="radio" name="q150" value="E"> E. SELECT &&col1, &&col2FROM &tableWHERE &&condition</label><br>
@@ -5861,5 +5869,258 @@ function checkAnswer202() {
 }
 
 </script>
+
+<script>
+
+function checkAnswer1() {
+  const correctAnswers = ['A', 'C'];
+  const selected = Array.from(document.querySelectorAll('input[name="q1"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result1');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+
+function checkAnswer3() {
+  const correctAnswers = ['B', 'C', 'F'];
+  const selected = Array.from(document.querySelectorAll('input[name="q3"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result3');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+
+function checkAnswer4() {
+  const correctAnswers = ['C', 'F'];
+  const selected = Array.from(document.querySelectorAll('input[name="q4"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result4');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+
+function checkAnswer5() {
+  const correctAnswers = ['E'];
+  const selected = Array.from(document.querySelectorAll('input[name="q5"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result5');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+
+function checkAnswer7() {
+  const correctAnswers = ['B'];
+  const selected = Array.from(document.querySelectorAll('input[name="q7"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result7');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+
+function checkAnswer8() {
+  const correctAnswers = ['C', 'F', 'G'];
+  const selected = Array.from(document.querySelectorAll('input[name="q8"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result8');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+
+function checkAnswer10() {
+  const correctAnswers = ['A', 'C', 'F'];
+  const selected = Array.from(document.querySelectorAll('input[name="q10"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result10');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+
+function checkAnswer11() {
+  const correctAnswers = ['C', 'E'];
+  const selected = Array.from(document.querySelectorAll('input[name="q11"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result11');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+
+function checkAnswer12() {
+  const correctAnswers = ['B', 'E', 'F'];
+  const selected = Array.from(document.querySelectorAll('input[name="q12"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result12');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+
+</script>
+
+<script>
+function checkAnswer5() {
+  const correctAnswers = ['E'];
+  const selected = Array.from(document.querySelectorAll('input[name="q5"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result5');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+
+<script>
+function checkAnswer7() {
+  const correctAnswers = ['C'];
+  const selected = Array.from(document.querySelectorAll('input[name="q7"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result7');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer8() {
+  const correctAnswers = ['C', 'D', 'F'];
+  const selected = Array.from(document.querySelectorAll('input[name="q8"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result8');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+
+<script>
+function checkAnswer10() {
+  const correctAnswers = ['A', 'C', 'D'];
+  const selected = Array.from(document.querySelectorAll('input[name="q10"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result10');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer13() {
+  const correctAnswers = ['B'];
+  const selected = Array.from(document.querySelectorAll('input[name="q13"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result13');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer15() {
+  const correctAnswers = ['A', 'E'];
+  const selected = Array.from(document.querySelectorAll('input[name="q15"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result15');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer16() {
+  const correctAnswers = ['A', 'D', 'F'];
+  const selected = Array.from(document.querySelectorAll('input[name="q16"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result16');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer17() {
+  const correctAnswers = ['B', 'D'];
+  const selected = Array.from(document.querySelectorAll('input[name="q17"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result17');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer18() {
+  const correctAnswers = ['B', 'C'];
+  const selected = Array.from(document.querySelectorAll('input[name="q18"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result18');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer19() {
+  const correctAnswers = ['A', 'B', 'D'];
+  const selected = Array.from(document.querySelectorAll('input[name="q19"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result19');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer20() {
+  const correctAnswers = ['B', 'C'];
+  const selected = Array.from(document.querySelectorAll('input[name="q20"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result20');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer21() {
+  const correctAnswers = ['B', 'D', 'E', 'F'];
+  const selected = Array.from(document.querySelectorAll('input[name="q21"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result21');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer22() {
+  const correctAnswers = ['B', 'C', 'D'];
+  const selected = Array.from(document.querySelectorAll('input[name="q22"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result22');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer24() {
+  const correctAnswers = ['A', 'B'];
+  const selected = Array.from(document.querySelectorAll('input[name="q24"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result24');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer25() {
+  const correctAnswers = ['B', 'E'];
+  const selected = Array.from(document.querySelectorAll('input[name="q25"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result25');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
 </body>
 </html>
