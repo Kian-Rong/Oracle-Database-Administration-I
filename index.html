@@ -872,7 +872,7 @@
 <label><input type="checkbox" name="q53" value="C"> C. The foreign key columns and parent table primary key columns must have the same names</label><br>
 <label><input type="checkbox" name="q53" value="D"> D. It is possible for child rows that have a foreign key to remain in the child table at the time the parent row is deleted</label><br>
 <label><input type="checkbox" name="q53" value="E"> E. It is possible for child rows that have a foreign key to be deleted automatically from the child table at the time the parent row is deleted</label><br>
-<label><input type="checkbox" name="q53" value="F"> F. Only the primary key can be defined at the column and table level</label><br>
+<label><input type="checkbox" name="q53" value="F"> F. Only the primary key can be defined at the column and table level</label><br><label><input type="checkbox" name="q53" value="G"> G. Primary key and foreign key constraints can be defined at both the column and table level.</label><br>
 <button type="submit">Submit</button>
 </form>
 <div id="result53" class="result"></div>
@@ -6282,6 +6282,337 @@ function checkAnswer49() {
   const correctAnswers = ['A', 'D', 'E'];
   const selected = Array.from(document.querySelectorAll('input[name="q49"]:checked')).map(cb => cb.value);
   const resultDiv = document.getElementById('result49');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+
+<script>
+function checkAnswer223() {
+  const correctAnswers = ['A', 'B', 'C', 'D'];
+  const selected = Array.from(document.querySelectorAll('input[name="q223"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result223');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer51() {
+  const correctAnswers = ['C', 'E'];
+  const selected = Array.from(document.querySelectorAll('input[name="q51"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result51');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer52() {
+  const correctAnswers = ['B', 'F'];
+  const selected = Array.from(document.querySelectorAll('input[name="q52"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result52');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer53() {
+  const correctAnswers = ['A', 'D', 'E', 'G'];
+  const selected = Array.from(document.querySelectorAll('input[name="q53"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result53');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer54() {
+  const correctAnswers = ['C'];
+  const selected = Array.from(document.querySelectorAll('input[name="q54"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result54');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer55() {
+  const correctAnswers = ['A', 'C'];
+  const selected = Array.from(document.querySelectorAll('input[name="q55"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result55');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer56() {
+  const correctAnswers = ['B', 'C'];
+  const selected = Array.from(document.querySelectorAll('input[name="q56"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result56');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer57() {
+  const correctAnswers = ['C'];
+  const selected = Array.from(document.querySelectorAll('input[name="q57"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result57');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer58() {
+  const correctAnswers = ['D', 'E', 'F'];
+  const selected = Array.from(document.querySelectorAll('input[name="q58"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result58');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer60() {
+  const correctAnswers = ['C', 'D'];
+  const selected = Array.from(document.querySelectorAll('input[name="q60"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result60');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer61() {
+  const correctAnswers = ['B', 'E', 'F'];
+  const selected = Array.from(document.querySelectorAll('input[name="q61"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result61');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer62() {
+  const correctAnswers = ['A', 'B', 'D'];
+  const selected = Array.from(document.querySelectorAll('input[name="q62"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result62');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer63() {
+  const correctAnswers = ['A', 'C'];
+  const selected = Array.from(document.querySelectorAll('input[name="q63"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result63');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer64() {
+  const correctAnswers = ['A', 'D'];
+  const selected = Array.from(document.querySelectorAll('input[name="q64"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result64');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer65() {
+  const correctAnswers = ['A', 'B'];
+  const selected = Array.from(document.querySelectorAll('input[name="q65"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result65');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer66() {
+  const correctAnswers = ['C', 'D', 'E'];
+  const selected = Array.from(document.querySelectorAll('input[name="q66"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result66');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer67() {
+  const correctAnswers = ['A', 'B', 'E'];
+  const selected = Array.from(document.querySelectorAll('input[name="q67"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result67');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer69() {
+  const correctAnswers = ['C', 'E'];
+  const selected = Array.from(document.querySelectorAll('input[name="q69"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result69');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer70() {
+  const correctAnswers = ['D'];
+  const selected = Array.from(document.querySelectorAll('input[name="q70"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result70');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer71() {
+  const correctAnswers = ['C', 'F'];
+  const selected = Array.from(document.querySelectorAll('input[name="q71"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result71');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer72() {
+  const correctAnswers = ['C', 'E'];
+  const selected = Array.from(document.querySelectorAll('input[name="q72"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result72');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer73() {
+  const correctAnswers = ['C', 'E'];
+  const selected = Array.from(document.querySelectorAll('input[name="q73"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result73');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer75() {
+  const correctAnswers = ['B', 'D', 'F'];
+  const selected = Array.from(document.querySelectorAll('input[name="q75"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result75');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer78() {
+  const correctAnswers = ['B', 'C', 'F'];
+  const selected = Array.from(document.querySelectorAll('input[name="q78"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result78');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer79() {
+  const correctAnswers = ['A', 'C', 'D'];
+  const selected = Array.from(document.querySelectorAll('input[name="q79"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result79');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer80() {
+  const correctAnswers = ['C', 'D'];
+  const selected = Array.from(document.querySelectorAll('input[name="q80"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result80');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer81() {
+  const correctAnswers = ['A', 'C', 'E'];
+  const selected = Array.from(document.querySelectorAll('input[name="q81"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result81');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer82() {
+  const correctAnswers = ['A', 'C', 'D'];
+  const selected = Array.from(document.querySelectorAll('input[name="q82"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result82');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer83() {
+  const correctAnswers = ['A', 'B'];
+  const selected = Array.from(document.querySelectorAll('input[name="q83"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result83');
+  const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
+  resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
+  resultDiv.style.color = isCorrect ? "green" : "red";
+}
+</script>
+
+<script>
+function checkAnswer84() {
+  const correctAnswers = ['D'];
+  const selected = Array.from(document.querySelectorAll('input[name="q84"]:checked')).map(cb => cb.value);
+  const resultDiv = document.getElementById('result84');
   const isCorrect = selected.length === correctAnswers.length && selected.every(val => correctAnswers.includes(val));
   resultDiv.innerText = isCorrect ? "✅ Correct!" : "❌ Incorrect. Correct answer: " + correctAnswers.join(", ");
   resultDiv.style.color = isCorrect ? "green" : "red";
